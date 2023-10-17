@@ -1,0 +1,391 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+.swipe_to_right {
+    width: 150px;
+    height: 50px;
+    background-color: darkred;
+    border: 1px solid black;
+    color: white;
+    position: relative;
+    z-index: 0;
+    overflow: hidden;
+    margin-left: 100px;
+    margin-top: 50px;
+}
+
+.swipe_to_right div {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: -150px;
+    background-color: aqua;
+    z-index: -1;
+    transition: 1s;
+}
+
+.swipe_to_right:hover div {
+    left: 0;
+}
+
+.swipe_to_left {
+    width: 150px;
+    height: 50px;
+    background-color: darkred;
+    border: 1px solid black;
+    color: white;
+    position: relative;
+    z-index: 0;
+    overflow: hidden;
+    margin-left: 100px;
+    margin-top: 50px;
+
+}
+
+.swipe_to_left div {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: -150px;
+    background-color: aqua;
+    z-index: -1;
+    transition: 1s;
+}
+
+.swipe_to_left:hover div {
+    right: 0;
+}
+
+.sweep_to_bottom {
+    width: 150px;
+    height: 50px;
+    background-color: darkred;
+    border: 1px solid black;
+    color: white;
+    position: relative;
+    z-index: 0;
+    overflow: hidden;
+    margin-left: 100px;
+    margin-top: 50px;
+}
+
+.sweep_to_bottom div {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    top: -150px;
+    background-color: aqua;
+    z-index: -1;
+    transition: 1s;
+}
+
+.sweep_to_bottom:hover div {
+    top: 0;
+}
+
+.sweep_to_top {
+    width: 150px;
+    height: 50px;
+    background-color: darkred;
+    border: 1px solid black;
+    color: white;
+    position: relative;
+    z-index: 0;
+    overflow: hidden;
+    margin-left: 100px;
+    margin-top: 50px;
+}
+
+.sweep_to_top div {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    bottom: 0;
+    bottom: -150px;
+    background-color: aqua;
+    z-index: -1;
+    transition: 1s;
+}
+
+.sweep_to_top:hover div {
+    bottom: 0;
+}
+
+.bounce_to_right {
+    width: 150px;
+    height: 50px;
+    background-color: darkred;
+    border: 1px solid black;
+    color: white;
+    position: relative;
+    z-index: 0;
+    overflow: hidden;
+    margin-left: 100px;
+    margin-top: 50px;
+}
+
+.bounce_to_right div {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: -150px;
+    background-color: aqua;
+    z-index: -1;
+    transition: 1s cubic-bezier(.35, 1.57, .75, -0.3);
+}
+
+.bounce_to_right:hover div {
+    left: 0;
+}
+
+.bounce_to_left {
+    width: 150px;
+    height: 50px;
+    background-color: darkred;
+    border: 1px solid black;
+    color: white;
+    position: relative;
+    z-index: 0;
+    overflow: hidden;
+    margin-left: 100px;
+    margin-top: 50px;
+}
+
+.bounce_to_left div {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: -150px;
+    background-color: aqua;
+    z-index: -1;
+    transition: 1s;
+}
+
+.bounce_to_left:hover div {
+    right: 0;
+}
+
+.bounce_to_bottom {
+    width: 150px;
+    height: 50px;
+    background-color: darkred;
+    border: 1px solid black;
+    color: white;
+    position: relative;
+    z-index: 0;
+    overflow: hidden;
+    margin-left: 100px;
+    margin-top: 50px;
+}
+
+.bounce_to_bottom div {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    top: -150px;
+    background-color: aqua;
+    z-index: -1;
+    transition: 1s cubic-bezier(.96, 1.66, .57, -0.34);
+}
+
+.bounce_to_bottom:hover div {
+    top: 0;
+}
+
+.bounce_to_bottom {
+    width: 150px;
+    height: 50px;
+    background-color: darkred;
+    border: 1px solid black;
+    color: white;
+    position: relative;
+    z-index: 0;
+    overflow: hidden;
+    margin-left: 100px;
+    margin-top: 50px;
+}
+
+.bounce_to_bottom div {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    bottom: 0;
+    bottom: -150px;
+    background-color: aqua;
+    z-index: -1;
+    transition: 1s cubic-bezier(.01, 1.89, .02, 0);
+}
+
+.bounce_to_bottom:hover div {
+    bottom: 0;
+}
+
+.radial_out {
+    width: 150px;
+    height: 50px;
+    background-color: darkred;
+    border: 1px solid black;
+    color: white;
+    position: relative;
+    z-index: 0;
+    overflow: hidden;
+    margin-left: 100px;
+    margin-top: 50px;
+    padding: 10px;
+}
+
+.radial_out div {
+    width: 0;
+    height: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: aqua;
+    z-index: -1;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    transition: 1s;
+}
+
+.radial_out:hover div {
+    width: 100%;
+    height: 100%;
+}
+
+.radial_in {
+    content: "";
+    width: 150px;
+    height: 50px;
+    background-color: darkred;
+    border: 1px solid black;
+    color: white;
+    position: relative;
+    z-index: 0;
+    margin-left: 100px;
+    overflow: hidden;
+}
+
+.radial_in:hover {
+    background-color: aqua;
+}
+
+.radial_in div {
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: darkred;
+    z-index: -1;
+    transition: 1s;
+    transform: translate(-50%, -50%);
+}
+
+.radial_in:hover div {
+    width: 0;
+    height: 0;
+}
+
+.rectangle_out {
+    width: 150px;
+    height: 50px;
+    background-color: darkred;
+    border: 1px solid black;
+    color: white;
+    position: relative;
+    z-index: 0;
+    overflow: hidden;
+    margin-left: 100px;
+    margin-top: 50px;
+}
+
+.rectangle_out div {
+    width: 0;
+    height: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: aqua;
+    z-index: -1;
+    transform: translate(-50%, -50%);
+    transition: 1s;
+}
+.rectangle_out:hover div {
+    width: 100%;
+    height: 100%;
+}
+
+.rectangle_in {
+    width: 150px;
+    height: 50px;
+    background-color: darkred;
+    border: 1px solid black;
+    color: white;
+    position: relative;
+    z-index: 0;
+    overflow: hidden;
+    margin-left: 100px;
+    margin-top: 50px;
+}
+.rectangle_in:hover {
+    background-color: aqua;
+}
+
+.rectangle_in div {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: darkred;
+    z-index: -1;
+    transition: 1s;
+    transform: translate(-50%, -50%);
+}
+
+.rectangle_in:hover div {
+    width: 0;
+    height: 0;
+}
+
+.shutter_out_horizontal {
+    position: relative;
+    margin: 100px auto;
+    height: 50px;
+    margin-left: 100px;
+    background-color: darkred;
+    color: white;
+    border: 1px solid black;
+    width: 200px;
+    height: 50px;
+    z-index: 0;
+}
+
+.shutter_out_horizontal::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    height: 50px;
+    width: 100%;
+    left: 0;
+    background-color: aqua;
+    transition: 1s;
+    transform: scaleX(0);
+    z-index: -1;
+}
+
+.shutter_out_horizontal:hover::after {
+    transform: scaleX(1);
+}
